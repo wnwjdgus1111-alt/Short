@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Camera_controller : MonoBehaviour
 {
-    public float mouseSensitivity = 600f; //마우스감도
+    public float mouseSensitivity = 200f; //마우스감도
 
     public Transform playerBody; 
 
