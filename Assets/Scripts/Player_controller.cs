@@ -15,11 +15,12 @@ public class Player_controller : MonoBehaviour
 
     void Update()
     {
-        
+        // 단서 보드가 열려있으면 이동 차단
+        if (ClueBoardManager.IsBoardOpen) return;
+
         hAxis = Input.GetAxisRaw("Horizontal"); 
         vAxis = Input.GetAxisRaw("Vertical");  
 
-        
         moveVec = (transform.right * hAxis) + (transform.forward * vAxis);
         moveVec = moveVec.normalized; 
 
